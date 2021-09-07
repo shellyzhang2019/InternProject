@@ -1,0 +1,47 @@
+{
+    "prefix":"Na",
+    "description":"Na",
+    "junctions":[
+        "Merge",
+        "Split",
+        "Intersection"
+    ],
+    "maps":[
+        {
+            "type":"non_connector",
+            "id":0,
+            "direction":"Bio",
+            "links":[
+                {
+                    "parent":"None",
+                    "child":"None"
+                }
+            ],
+            "starter":[
+                "x=0.0",
+                "y=0.0"
+            ],
+            "heading":0.0,
+            "lanes":[
+                {
+                    "A":["type=line,dist=3000,left=True,num=3,width=3.75",
+                        "type=line,dist=3000,right=True,num=3,width=3.75"],
+                    "B":["type=line,dist=100,left=True,num=3,width=3.75",
+                        "type=line,dist=100,right=True,num=3,width=3.75",
+                        "type=poly,dist=100,right=True,num=1,width=3.75"],
+                    "C":["type=line,dist=1900,left=True,num=3,width=3.75",
+                        "type=line,dist=1900,right=True,num=4,width=3.75"]
+                    
+                }
+            ],
+            "speed":100,
+            "builders":[
+                "line:dist=5000.0"
+            ],
+            "elevations":[
+                "dist=3000.0,slope=-0.05",
+                "dist=2000.0,slope=0.02"
+            ]   
+        }
+    ]
+}

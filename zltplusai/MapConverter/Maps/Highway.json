@@ -1,0 +1,640 @@
+{
+    "prefix":"Super HIGHWAY",
+    "description":"A super example of highway",
+    "junctions":[
+        "Merge",
+        "Split",
+        "Intersection"
+    ],
+    "maps":[
+        {
+            "type":"non_connector",
+            "id":0,
+            "direction":"Bio",
+            "links":[
+                {
+                    "parent":"None",
+                    "child":"1"
+                }
+            ],
+            "starter":[
+                "x=0.0",
+                "y=-300.0"
+            ],
+            "heading":1.57079632677,
+            "lanes":[
+                {
+                    "A":["type=line,dist=120,left=True,num=4,width=3.5",
+                        "type=line,dist=120,right=True,num=4,width=3.5"]
+                    }
+            ],
+            "speed":100,
+            "builders":[
+                "line:dist=120.0"
+            ],
+            "elevations":[
+                "dist=120.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"non_connector",
+            "id":1,
+            "direction":"Bio",
+            "links":[
+                {
+                    "parent":"0",
+                    "child":"Junction_Split_1"
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=100,left=True,num=4,width=3.5",
+                        "type=line,dist=100,right=True,num=4,width=3.5"],
+                    "B":["type=line,dist=90,left=True,num=4,width=3.5",
+                        "type=line,dist=90,right=True,num=4,width=3.5",
+                        "type=poly,dist=90,right=True,num=2,width=3.5"],
+                    "C":["type=line,dist=10,left=True,num=4,width=3.5",
+                        "type=line,dist=10,right=True,num=4,width=3.5",
+                        "type=poly,dist=10,right=True,num=2,width=1.0",
+                        "type=line,dist=10,right=True,num=2,width=3.5"]
+                }
+            ],
+            "speed":100,
+            "builders":[
+                "line:dist=200.0"
+            ],
+            "elevations":[
+                "dist=200.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"non_connector",
+            "id":3,
+            "direction":"Bio",
+            "links":[
+                {
+                    "parent":"Junction_Split_2",
+                    "child":"None"
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=200,left=True,num=4,width=3.5",
+                        "type=line,dist=200,right=True,num=4,width=3.5"]
+                }
+            ],
+            "speed":100,
+            "builders":[
+                "line:dist=200.0"
+            ],
+            "elevations":[
+                "dist=200.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"non_connector",
+            "id":2,
+            "direction":"Bio",
+            "links":[
+                {
+                    "parent":"Junction_Split_1",
+                    "child":"Junction_Split_2"
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=100.0,left=True,num=4,width=3.5",
+                        "type=line,dist=100.0,right=True,num=4,width=3.5"],
+                    "B":["type=line,dist=90,left=True,num=4,width=3.5",
+                        "type=line,dist=90,right=True,num=4,width=3.5",
+                        "type=poly,dist=90,right=True,num=2,width=3.5"],
+                    "C":["type=line,dist=10,left=True,num=4,width=3.5",
+                        "type=line,dist=10,right=True,num=4,width=3.5",
+                        "type=poly,dist=10,right=True,num=2,width=1.0",
+                        "type=line,dist=10,right=True,num=2,width=3.5"]
+                }
+            ],
+            "speed":100,
+            "builders":[
+                "line:dist=200.0"
+            ],
+            "elevations":[
+                "dist=200.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"non_connector",
+            "id":4,
+            "direction":"Bio",
+            "links":[
+                {
+                    "parent":"None",
+                    "child":"Junction_Merge_2"
+                }
+            ],
+            "starter":[
+                "x=-200.0",
+                "y=200.0"
+            ],
+            "heading":0.0,
+            "lanes":[
+                {
+                    "A":["type=line,dist=50,left=True,num=4,width=3.5",
+                        "type=line,dist=50,right=True,num=4,width=3.5"],
+                    "B":["type=line,dist=40,left=True,num=4,width=3.5",
+                        "type=poly,dist=40,left=True,num=2,width=3.5",
+                        "type=line,dist=40,right=True,num=4,width=3.5"],
+                    "C":["type=line,dist=10,left=True,num=4,width=3.5",
+                        "type=poly,dist=10,left=True,num=2,width=1.0",
+                        "type=line,dist=10,left=True,num=2,width=3.5",
+                        "type=line,dist=10,right=True,num=4,width=3.5"]
+                }
+            ],
+            "speed":100,
+            "builders":[
+                "line:dist=100.0"
+            ],
+            "elevations":[
+                "dist=100.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"non_connector",
+            "id":5,
+            "direction":"Bio",
+            "links":[
+                {
+                    "parent":"Junction_Merge_2",
+                    "child":"Junction_Merge_1"
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=800,left=True,num=4,width=3.5",
+                        "type=line,dist=800,right=True,num=4,width=3.5"]
+                }
+            ],
+            "speed":100,
+            "builders":[
+                "line:dist=800.0"
+            ],
+            "elevations":[
+                "dist=800.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"non_connector",
+            "id":6,
+            "direction":"Bio",
+            "links":[
+                {
+                    "parent":"Junction_Merge_1",
+                    "child":"None"
+                }
+            ],
+            "lanes":[
+                {
+                    "A": ["type=line,dist=10,left=True,num=4,width=3.5",
+                        "type=line,dist=10,right=True,num=4,width=3.5",
+                        "type=poly,dist=10,right=True,num=2,width=1.0",
+                        "type=line,dist=10,right=True,num=2,width=3.5"],
+                    "B": ["type=line,dist=40,left=True,num=4,width=3.5",
+                        "type=line,dist=40,right=True,num=4,width=3.5",
+                        "type=poly,dist=40,right=True,num=2,width=3.5"],
+                    "C": ["type=line,dist=50,left=True,num=4,width=3.5",
+                         "type=line,dist=50,right=True,num=4,width=3.5"]
+                    
+                }
+            ],
+            "speed":100,
+            "builders":[
+                "line:dist=100.0"
+            ],
+            "elevations":[
+                "dist=100.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"non_connector",
+            "id": 17,
+            "direction":"Uni",
+            "links":[
+                {
+                    "parent": "Junction_Split_1",
+                    "child":"Junction_Merge_1"
+                }
+            ],
+            "lanes":[
+                {
+                    "A": ["type=line,dist=unknown,right=True,num=2,width=3.5"]
+                }
+            ],
+            "speed": 60,
+            "builders":[
+                "unknown"
+            ],
+            "elevations":[
+                "dist=unknown,slope=0.00"
+            ]   
+        },
+        {
+            "type":"non_connector",
+            "id": 18,
+            "direction":"Uni",
+            "links":[
+                {
+                    "parent": "Junction_Split_2",
+                    "child":"Junction_Merge_2"
+                }
+            ],
+            "lanes":[
+                {
+                    "A": ["type=line,dist=unknown,right=True,num=2,width=3.5"]
+                }
+            ],
+            "speed": 60,
+            "builders":[
+                "unknown"
+            ],
+            "elevations":[
+                "dist=unknown,slope=0.00"
+            ]   
+        },
+        {
+            "type":"connector",
+            "id":7,
+            "junction":"Junction_Split_1",
+            "links":[
+                {
+                    "parent":"1",
+                    "child":"2",
+                    "lanelinks":[
+                        "(1, 7):(-1, -1)",
+                        "(1, 7):(-2, -2)",
+                        "(1, 7):(-3, -3)",
+                        "(1, 7):(-4, -4)",
+                        "(7, 2):(-1, -1)",
+                        "(7, 2):(-2, -2)",
+                        "(7, 2):(-3, -3)",
+                        "(7, 2):(-4, -4)"
+                    ]
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=150,right=True,num=4,width=3.5"]
+                }
+            ],
+            "builders":[
+                "line:dist=150.0"
+            ],
+            "elevations":[
+                "dist=150.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"connector",
+            "id":8,
+            "junction":"Junction_Split_1",
+            "links":[
+                {
+                    "parent":"2",
+                    "child":"1",
+                    "lanelinks":[
+                        "(2, 8):(1, -1)",
+                        "(2, 8):(2, -2)",
+                        "(2, 8):(3, -3)",
+                        "(2, 8):(4, -4)",
+                        "(8, 1):(-1, 1)",
+                        "(8, 1):(-2, 2)",
+                        "(8, 1):(-3, 3)",
+                        "(8, 1):(-4, 4)"
+                    ]
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=150,right=True,num=4,width=3.5"]
+                }
+            ],
+            "builders":[
+                "line:dist=150.0"
+            ],
+            "elevations":[
+                "dist=150.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"connector",
+            "id":9,
+            "junction":"Junction_Split_1",
+            "links":[
+                {
+                    "parent":"1",
+                    "child":"17",
+                    "lanelinks":[
+                        "(1, 9):(-7, -1)",
+                        "(1, 9):(-8, -2)",
+                        "(9, 17):(-1, -7)",
+                        "(9, 17):(-2, -8)"
+                    ]
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=50,right=True,num=2,width=3.5"]
+                }
+            ],
+            "builders":[
+                "line:dist=50.0",
+                "spiral:dist=50.0",
+                "arc:dist=50.0,curvature=-0.02"
+            ],
+            "elevations":[
+                "dist=150,slope=0.00"
+            ]   
+        },
+        {
+            "type":"connector",
+            "id":10,
+            "junction":"Junction_Split_2",
+            "links":[
+                {
+                    "parent":"2",
+                    "child":"3",
+                    "lanelinks":[
+                        "(2, 10):(-1, -1)",
+                        "(2, 10):(-2, -2)",
+                        "(2, 10):(-3, -3)",
+                        "(2, 10):(-4, -4)",
+                        "(10, 3):(-1, -1)",
+                        "(10, 3):(-2, -2)",
+                        "(10, 3):(-3, -3)",
+                        "(10, 3):(-4, -4)"
+                    ]
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=100,right=True,num=4,width=3.5"]
+                }
+            ],
+            "builders":[
+                "line:dist=100.0"
+            ],
+            "elevations":[
+                "dist=100.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"connector",
+            "id":11,
+            "junction":"Junction_Split_2",
+            "links":[
+                {
+                    "parent":"3",
+                    "child":"2",
+                    "lanelinks":[
+                        "(3, 11):(1, -1)",
+                        "(3, 11):(2, -2)",
+                        "(3, 11):(3, -3)",
+                        "(3, 11):(4, -4)",
+                        "(11, 2):(-1, 1)",
+                        "(11, 2):(-2, 2)",
+                        "(11, 2):(-3, 3)",
+                        "(11, 2):(-4, 4)"
+                    ]
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=100,right=True,num=4,width=3.5"]
+                }
+            ],
+            "builders":[
+                "line:dist=100.0"
+            ],
+            "elevations":[
+                "dist=100.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"connector",
+            "id":12,
+            "junction":"Junction_Split_2",
+            "links":[
+                {
+                    "parent":"2",
+                    "child":"18",
+                    "lanelinks":[
+                        "(2, 12):(-7, -1)",
+                        "(2, 12):(-8, -2)",
+                        "(12, 18):(-1, -1)",
+                        "(12, 18):(-2, -2)"
+                    ]
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=50.0,right=True,num=2,width=3.5"]
+                }
+            ],
+            "builders":[
+                "line:dist=50.0",
+                "spiral:dist=50.0",
+                "arc:dist=50.0,curvature=-0.01"
+            ],
+            "elevations":[
+                "dist=150,slope=0.00"
+            ]   
+        },
+        {
+            "type":"connector",
+            "id":13,
+            "junction":"Junction_Merge_2",
+            "links":[
+                {
+                    "parent":"4",
+                    "child":"5",
+                    "lanelinks":[
+                        "(4, 13):(-1, -1)",
+                        "(4, 13):(-2, -2)",
+                        "(4, 13):(-3, -3)",
+                        "(4, 13):(-4, -4)",
+                        "(13, 5):(-1, -1)",
+                        "(13, 5):(-2, -2)",
+                        "(13, 5):(-3, -3)",
+                        "(13, 5):(-4, -4)"
+                    ]
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=100,right=True,num=4,width=3.5"]
+                }
+            ],
+            "builders":[
+                "line:dist=100.0"
+            ],
+            "elevations":[
+                "dist=100.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"connector",
+            "id":14,
+            "junction":"Junction_Merge_2",
+            "links":[
+                {
+                    "parent":"5",
+                    "child":"4",
+                    "lanelinks":[
+                        "(5, 14):(1, -1)",
+                        "(5, 14):(2, -2)",
+                        "(5, 14):(3, -3)",
+                        "(5, 14):(4, -4)",
+                        "(14, 4):(-1, 1)",
+                        "(14, 4):(-2, 2)",
+                        "(14, 4):(-3, 3)",
+                        "(14, 4):(-4, 4)"
+                    ]
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=100,right=True,num=4,width=3.5"]
+                }
+            ],
+            "builders":[
+                "line:dist=100.0"
+            ],
+            "elevations":[
+                "dist=100.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"connector",
+            "id":15,
+            "junction":"Junction_Merge_2",
+            "links":[
+                {
+                    "parent":"4",
+                    "child":"18",
+                    "lanelinks":[
+                        "(4, 15):(7, 1)",
+                        "(4, 15):(8, 2)",
+                        "(15, 18):(1, -1)",
+                        "(15, 18):(2, -2)"
+                    ]
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=50,left=True,num=2,width=3.5"]
+                }
+            ],
+            "builders":[
+                "line:dist=50.0",
+                "spiral:dist=50.0",
+                "arc:dist=50.0,curvature=0.01"
+            ],
+            "elevations":[
+                "dist=150.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"connector",
+            "id":16,
+            "junction":"Junction_Merge_1",
+            "links":[
+                {
+                    "parent":"6",
+                    "child":"5",
+                    "lanelinks":[
+                        "(6, 16):(1, -1)",
+                        "(6, 16):(2, -2)",
+                        "(6, 16):(3, -3)",
+                        "(6, 16):(4, -4)",
+                        "(16, 5):(-1, 1)",
+                        "(16, 5):(-2, 2)",
+                        "(16, 5):(-3, 3)",
+                        "(16, 5):(-4, 4)"
+                    ]
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=100,right=True,num=4,width=3.5"]
+                }
+            ],
+            "builders":[
+                "line:dist=100.0"
+            ],
+            "elevations":[
+                "dist=100.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"connector",
+            "id":19,
+            "junction":"Junction_Merge_1",
+            "links":[
+                {
+                    "parent":"5",
+                    "child":"6",
+                    "lanelinks":[
+                        "(5, 19):(-1, -1)",
+                        "(5, 19):(-2, -2)",
+                        "(5, 19):(-3, -3)",
+                        "(5, 19):(-4, -4)",
+                        "(19, 6):(-1, -1)",
+                        "(19, 6):(-2, -2)",
+                        "(19, 6):(-3, -3)",
+                        "(19, 6):(-4, -4)"
+                    ]
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=100,right=True,num=4,width=3.5"]
+                }
+            ],
+            "builders":[
+                "line:dist=100.0"
+            ],
+            "elevations":[
+                "dist=100.0,slope=0.00"
+            ]   
+        },
+        {
+            "type":"connector",
+            "id":20,
+            "junction":"Junction_Merge_1",
+            "links":[
+                {
+                    "parent":"6",
+                    "child":"17",
+                    "lanelinks":[
+                        "(20, 17):(1, -1)",
+                        "(20, 17):(2, -2)",
+                        "(6, 20):(-7, 1)",
+                        "(6, 20):(-8, 2)"
+                    ]
+                }
+            ],
+            "lanes":[
+                {
+                    "A":["type=line,dist=50,left=True,num=2,width=3.5"]
+                }
+            ],
+            "builders":[
+                "line:dist=50.0",
+                "spiral:dist=50.0",
+                "arc:dist=50.0,curvature=0.02"
+            ],
+            "elevations":[
+                "dist=150.0,slope=0.00"
+            ]   
+        }
+    ]
+}

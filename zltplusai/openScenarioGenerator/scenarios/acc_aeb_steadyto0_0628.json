@@ -1,0 +1,142 @@
+{
+    "prefix": "scenario_acc_aeb_steadyTo0_straight",
+    "description": "scenario name could be Prefix_id.prototxt rating from 00001, for example, acc_cut_in_1_00001.prototxt",
+    "maps": [
+        {
+            "lane_width": 3.75,
+            "left_lanes": 1,
+            "right_lanes": 1,
+            "builders": [
+                "line:dist=5000"
+            ]
+        }
+    ],
+    "ego": {
+        "dl": [
+            0
+        ],
+        "w": [
+            2.5
+        ],
+        "l": [
+            28
+        ],
+        "h": [
+            3.7
+        ],
+        "v": [
+            11.11,
+            12.5,
+            13.88,
+            15.27,
+            16.66,
+            19.44,
+            22.22,
+            25,
+            27
+        ],
+        "a": [
+            0
+        ],
+        "yaw": [
+            0
+        ],
+        "commands": [
+                {
+                    "command": "fdl",
+                    "params": {
+                        "lim": 
+                        [
+                            "LEVEL_ONE_LIMIT",
+                            "LEVEL_TWO_LIMIT",
+                            "LEVEL_THREE_LIMIT"
+                        ], 
+			 "t":
+                        [ 
+                            2.0
+                        ]
+                    }
+                }
+        ]
+    },
+    "agents": [
+        {
+            "ref_car": "ego",
+            "w": [
+                1.6
+            ],
+            "l": [
+                4
+            ],
+            "h": [
+                1.4
+            ],
+            "yaw": [
+                0
+            ],
+            "ds": [
+                180
+            ],
+            "dl": [
+                0
+            ],
+            "v": [
+                1.38,
+                2.77,
+                4.16,
+                5.55,
+                6.94,
+                8.33,
+                9.72,
+                10,
+                11.11,
+                12.5,
+                13.88,
+                15.27,
+                16.66,
+                19.44,
+                22.22,
+                25
+            ],
+            "da": [
+                0
+            ],
+            "vmx": [
+                33.33
+            ],
+            "vmn": [
+                0
+            ],
+            "actions": [
+                {
+                    "action": "lf",
+                    "params": {
+                        "t": [
+                            50
+                        ],
+                        "a": [
+                            0
+                        ]
+                    }
+                },
+                {
+                    "action": "lf",
+                    "params": {
+                        "t": [
+                            40
+                        ],
+                        "a": [
+                            -3,
+                            -2.5,
+                            -2,
+                            -1.5,
+                            -1,
+                            -0.5
+
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
